@@ -8,6 +8,7 @@ import {
   ChevronDown,
   Lightbulb,
   Loader2,
+  Trophy,
 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
@@ -127,7 +128,15 @@ const DailyView = () => {
               Study area
             </Link>
           </Button>
-          <DarkModeToggle />
+          <div className="flex items-center gap-2">
+            <Button asChild variant="outline" size="sm" className="rounded-full">
+              <Link to={`/leaderboard/${code}`}>
+                <Trophy className="h-4 w-4" />
+                Leaderboard
+              </Link>
+            </Button>
+            <DarkModeToggle />
+          </div>
         </div>
 
         <section className="hero-shell mt-5 p-6 sm:p-8">
