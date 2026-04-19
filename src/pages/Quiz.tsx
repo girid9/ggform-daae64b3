@@ -20,6 +20,7 @@ import {
 import { FloatingInput } from "@/components/FloatingInput";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
 import Leaderboard from "@/components/Leaderboard";
+import { QuizSkeleton } from "@/components/PageSkeletons";
 import confetti from "canvas-confetti";
 
 interface Question {

@@ -13,6 +13,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { DailyViewSkeleton } from "@/components/PageSkeletons";
 import curriculumData from "@/data/curriculum.json";
 
 const STORAGE_KEY = "learnhub-progress";

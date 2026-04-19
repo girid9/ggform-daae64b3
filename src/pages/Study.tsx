@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { StudySkeleton } from "@/components/PageSkeletons";
 import { toast } from "sonner";
 
 interface Question {
