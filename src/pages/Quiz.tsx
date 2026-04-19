@@ -111,66 +111,9 @@ const Quiz = () => {
     localStorage.setItem(LANGUAGE_KEY, languageMode);
   }, [languageMode]);
 
+  // Animations disabled for performance and to prevent stale opacity/transform state.
   useLayoutEffect(() => {
-    if (!motionAllowed || !sceneRef.current) {
-      return;
-    }
-
-    const ctx = gsap.context(() => {
-      const stage = sceneRef.current?.querySelector<HTMLElement>("[data-stage]");
-      const steps = gsap.utils.toArray<HTMLElement>("[data-step]");
-      const options = gsap.utils.toArray<HTMLElement>("[data-option]");
-      const stats = gsap.utils.toArray<HTMLElement>("[data-stat]");
-
-      if (stage) {
-        gsap.from(stage, {
-          opacity: 0,
-          y: 22,
-          duration: 0.65,
-          ease: "power3.out",
-          clearProps: "transform",
-        });
-      }
-
-      if (steps.length > 0) {
-        gsap.from(steps, {
-          opacity: 0,
-          y: 10,
-          duration: 0.35,
-          ease: "power2.out",
-          stagger: 0.04,
-          clearProps: "transform",
-        });
-      }
-
-      if (stats.length > 0) {
-        gsap.from(stats, {
-          opacity: 0,
-          y: 12,
-          duration: 0.45,
-          ease: "power2.out",
-          stagger: 0.06,
-          delay: 0.08,
-          clearProps: "transform",
-        });
-      }
-
-      if (options.length > 0) {
-        gsap.from(options, {
-          opacity: 0,
-          y: 16,
-          duration: 0.42,
-          ease: "power2.out",
-          stagger: 0.06,
-          delay: 0.1,
-          clearProps: "transform",
-        });
-      }
-    }, sceneRef);
-
-    return () => {
-      ctx.revert();
-    };
+    // no-op
   }, [
     currentQuizIndex,
     currentStudyIndex,
