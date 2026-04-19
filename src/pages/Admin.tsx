@@ -922,6 +922,18 @@ const Admin = () => {
                       </div>
                       <div className="flex gap-2">
                         <Button
+                          asChild
+                          variant="outline"
+                          size="icon"
+                          className="h-10 w-10 rounded-2xl"
+                          title="View leaderboard"
+                          onClick={(event) => event.stopPropagation()}
+                        >
+                          <Link to={`/leaderboard/session/${session.session_code}`}>
+                            <Trophy className="h-4 w-4" />
+                          </Link>
+                        </Button>
+                        <Button
                           variant="outline"
                           size="icon"
                           className="h-10 w-10 rounded-2xl"
