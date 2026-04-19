@@ -297,6 +297,7 @@ const Quiz = () => {
     if (phase !== "quiz" || !attemptId || Object.keys(answers).length === 0) return;
 
     const saveProgress = async () => {
+      if (submittingRef.current) return;
       await supabase.from("quiz_attempts").update({ answers }).eq("id", attemptId);
     };
 
