@@ -12,10 +12,13 @@ import ImportQuestions from "./pages/ImportQuestions";
 import NotFound from "./pages/NotFound";
 import DailyView from "./pages/DailyView";
 import Study from "./pages/Study";
+import { useVersionCheck } from "@/hooks/useVersionCheck";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => {
+  useVersionCheck();
+  return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -35,6 +38,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;
