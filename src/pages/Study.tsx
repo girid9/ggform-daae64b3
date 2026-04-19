@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { StudySkeleton } from "@/components/PageSkeletons";
 import { toast } from "sonner";
 
 interface Question {
@@ -243,11 +244,7 @@ const Study = () => {
   const revealed = !!pickedNow;
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center page-bg">
-        <Loader2 className="w-6 h-6 animate-spin text-primary" />
-      </div>
-    );
+    return <StudySkeleton />;
   }
 
   return (

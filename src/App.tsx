@@ -5,6 +5,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Loader2 } from "lucide-react";
+import { RouteSkeleton } from "@/components/PageSkeletons";
 
 // Eager: landing + most-used flows
 import Index from "./pages/Index";
@@ -21,11 +22,7 @@ const Study = lazy(() => import("./pages/Study"));
 
 const queryClient = new QueryClient();
 
-const RouteFallback = () => (
-  <div className="page-bg flex min-h-screen items-center justify-center">
-    <Loader2 className="h-7 w-7 animate-spin text-primary" />
-  </div>
-);
+const RouteFallback = () => <RouteSkeleton />;
 
 const App = () => {
   return (

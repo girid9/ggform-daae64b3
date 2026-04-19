@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { AnalyticsSkeleton } from "@/components/PageSkeletons";
 
 interface AttemptRow {
   id: string;
@@ -168,19 +169,7 @@ const Analytics = () => {
   }, [attempts]);
 
   if (loading) {
-    return (
-      <div className="page-bg flex min-h-screen items-center justify-center px-4">
-        <div className="surface-panel flex w-full max-w-sm flex-col items-center gap-4 p-8 text-center">
-          <Loader2 className="h-8 w-8 animate-spin text-primary" />
-          <div>
-            <p className="eyebrow">Loading analytics</p>
-            <p className="mt-2 text-base font-semibold text-foreground">
-              Pulling current quiz performance data.
-            </p>
-          </div>
-        </div>
-      </div>
-    );
+    return <AnalyticsSkeleton />;
   }
 
   return (
