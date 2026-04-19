@@ -297,6 +297,7 @@ const Quiz = () => {
     if (phase !== "quiz" || !attemptId || Object.keys(answers).length === 0) return;
 
     const saveProgress = async () => {
+      if (submittingRef.current) return;
       await supabase.from("quiz_attempts").update({ answers }).eq("id", attemptId);
     };
 
@@ -313,13 +314,17 @@ const Quiz = () => {
     setAnswers((prev) => ({ ...prev, [questionId]: originalKey }));
   };
 
+  const submittingRef = useRef(false);
+
   const submitQuiz = async () => {
     if (Object.keys(answers).length < questions.length) {
       toast.error("Answer every question before submitting.");
       return;
     }
 
-    // ---- Optimistic UI: show results immediately, persist in background ----
+    // Lock auto-save so it cannot overwrite the final score
+    submittingRef.current = true;
+
     let correct = 0;
     questions.forEach((question) => {
       if (answers[question.id] === question.correct_answer) correct++;
