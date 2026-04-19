@@ -968,6 +968,19 @@ const Quiz = () => {
           </Button>
         </div>
 
+        <div className="mt-3">
+          <Button
+            asChild
+            variant="outline"
+            className="h-12 w-full rounded-2xl text-sm"
+          >
+            <a href={`/leaderboard/session/${code}`}>
+              <Trophy className="h-4 w-4" />
+              View full leaderboard
+            </a>
+          </Button>
+        </div>
+
         <div className="mt-6 overflow-hidden" data-stage>
           <Leaderboard sessionId={sessionId} />
         </div>
