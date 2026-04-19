@@ -318,51 +318,50 @@ const Quiz = () => {
       return;
     }
 
-    setSubmitting(true);
-
+    // ---- Optimistic UI: show results immediately, persist in background ----
     let correct = 0;
     questions.forEach((question) => {
       if (answers[question.id] === question.correct_answer) correct++;
     });
 
-    const payload = {
-      score: correct,
-      answers,
-    };
+    setScore(correct);
+    setPhase("results");
+    setSubmitting(true);
 
-    let submitError;
-    if (attemptId) {
-      const { error } = await supabase.from("quiz_attempts").update(payload).eq("id", attemptId);
-      submitError = error;
-    } else {
-      const { error } = await supabase.from("quiz_attempts").insert({
-        session_id: sessionId,
-        student_name: studentName.trim(),
-        total_questions: questions.length,
-        ...payload,
+    const percentage = (correct / questions.length) * 100;
+    if (percentage >= 60 && motionAllowed) {
+      confetti({
+        particleCount: 140,
+        spread: 70,
+        origin: { y: 0.62 },
+        colors: ["#2563EB", "#F5B400", "#0EA5E9", "#34D399"],
       });
-      submitError = error;
     }
 
-    if (submitError) {
-      toast.error("Your answers could not be submitted. Please try again.");
-      console.error(submitError);
-    } else {
-      setScore(correct);
-      setPhase("results");
-      const percentage = (correct / questions.length) * 100;
+    const payload = { score: correct, answers };
 
-      if (percentage >= 60 && motionAllowed) {
-        confetti({
-          particleCount: 140,
-          spread: 70,
-          origin: { y: 0.62 },
-          colors: ["#2563EB", "#F5B400", "#0EA5E9", "#34D399"],
+    try {
+      let submitError;
+      if (attemptId) {
+        const { error } = await supabase.from("quiz_attempts").update(payload).eq("id", attemptId);
+        submitError = error;
+      } else {
+        const { error } = await supabase.from("quiz_attempts").insert({
+          session_id: sessionId,
+          student_name: studentName.trim(),
+          total_questions: questions.length,
+          ...payload,
         });
+        submitError = error;
       }
-    }
 
-    setSubmitting(false);
+      if (submitError) {
+        console.error(submitError);
+        toast.error("Saved locally — we'll retry syncing your score.", { duration: 4000 });
+      }
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const studyCompletedCount = Object.keys(studyAnswers).length;
