@@ -21,7 +21,6 @@ import { FloatingInput } from "@/components/FloatingInput";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
 import Leaderboard from "@/components/Leaderboard";
 import confetti from "canvas-confetti";
-import gsap from "gsap";
 
 interface Question {
   id: string;
