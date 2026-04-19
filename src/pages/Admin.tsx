@@ -15,6 +15,7 @@ import {
   Shield,
   Sparkles,
   Trash2,
+  Trophy,
   Upload,
   Users,
 } from "lucide-react";
