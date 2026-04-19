@@ -99,19 +99,7 @@ const DailyView = () => {
   };
 
   if (loading) {
-    return (
-      <div className="page-bg flex min-h-screen items-center justify-center px-4">
-        <div className="surface-panel flex w-full max-w-sm flex-col items-center gap-4 p-8 text-center">
-          <Loader2 className="h-8 w-8 animate-spin text-primary" />
-          <div>
-            <p className="eyebrow">Loading daily set</p>
-            <p className="mt-2 text-base font-semibold text-foreground">
-              Pulling today&apos;s study topics.
-            </p>
-          </div>
-        </div>
-      </div>
-    );
+    return <DailyViewSkeleton />;
   }
 
   if (error || !subject) {

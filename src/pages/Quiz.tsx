@@ -425,19 +425,7 @@ const Quiz = () => {
   );
 
   if (loading) {
-    return (
-      <div className="page-bg flex min-h-screen items-center justify-center px-5">
-        <div className="surface-panel flex w-full max-w-sm flex-col items-center gap-5 p-8 text-center">
-          <Loader2 className="h-8 w-8 animate-spin text-primary" />
-          <div>
-            <p className="eyebrow">Loading quiz</p>
-            <p className="mt-2 text-base font-semibold text-foreground">
-              Pulling the latest session details for you.
-            </p>
-          </div>
-        </div>
-      </div>
-    );
+    return <QuizSkeleton />;
   }
 
   if (error) {

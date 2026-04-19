@@ -243,11 +243,8 @@ const Study = () => {
   const revealed = !!pickedNow;
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center page-bg">
-        <Loader2 className="w-6 h-6 animate-spin text-primary" />
-      </div>
-    );
+    return <StudySkeleton />;
+  }
   }
 
   return (
