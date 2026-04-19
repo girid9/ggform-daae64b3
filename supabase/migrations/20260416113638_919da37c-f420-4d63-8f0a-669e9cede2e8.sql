@@ -1,0 +1,1 @@
+CREATE POLICY "Anyone can delete students" ON public.students FOR DELETE USING (true);

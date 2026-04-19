@@ -1,0 +1,892 @@
+{
+  "title": "Electronics & Computer Science Learning Hub",
+  "subjects": [
+    {
+      "id": "electronics",
+      "name": "Electronics Fundamentals",
+      "color": "#3B82F6",
+      "icon": "⚡",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Current",
+          "symbol": "I",
+          "unit": "Ampere (A)",
+          "notation": "I",
+          "simple_explanation": "Current is the flow of electrons through a wire. Think of it like water flowing through a pipe — the more water flows, the higher the current. Electrons move from negative (-) to positive (+) terminal.",
+          "example": "A phone charger uses about 1-2 Amperes of current to charge your battery.",
+          "formula": "I = Q / t  (Charge ÷ Time)",
+          "key_points": [
+            "Unit: Ampere (A)",
+            "Symbol: I",
+            "Measured with Ammeter",
+            "Electrons flow from – to +"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Voltage",
+          "symbol": "V",
+          "unit": "Volt (V)",
+          "notation": "V",
+          "simple_explanation": "Voltage is the electrical pressure that pushes electrons through a circuit. Like water pressure in a pipe — higher pressure means more water flows. Without voltage, no current flows.",
+          "example": "A AA battery has 1.5V. A phone charger gives 5V. Your home wall socket gives 220V.",
+          "formula": "V = I × R  (Current × Resistance)",
+          "key_points": [
+            "Unit: Volt (V)",
+            "Symbol: V",
+            "Measured with Voltmeter",
+            "Also called EMF or Potential Difference"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Resistance",
+          "symbol": "R",
+          "unit": "Ohm (Ω)",
+          "notation": "R",
+          "simple_explanation": "Resistance is how much a material opposes the flow of current. Like a narrow pipe slows water flow. More resistance = less current flows.",
+          "example": "A light bulb has resistance. That resistance converts electrical energy into light and heat.",
+          "formula": "R = V / I  (Voltage ÷ Current)",
+          "key_points": [
+            "Unit: Ohm (Ω)",
+            "Symbol: R",
+            "Measured with Ohmmeter/Multimeter",
+            "Higher resistance = less current"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Resistor",
+          "symbol": "R",
+          "unit": "Ohm (Ω)",
+          "notation": "R",
+          "simple_explanation": "A resistor is a small component that limits current in a circuit. It comes in fixed and variable types. A Switch (S/W) opens or closes a circuit. A Socket is where you plug in devices.",
+          "example": "The volume knob on a speaker is a variable resistor (potentiometer). It controls how much current reaches the speaker.",
+          "types": [
+            "Fixed Resistor",
+            "Variable Resistor (Potentiometer)",
+            "Switch (S/W)",
+            "Socket",
+            "Plug"
+          ],
+          "key_points": [
+            "Color bands show resistance value",
+            "BBROYGBVGW color code",
+            "Used to protect components from too much current"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Units of R, V, I",
+          "symbol": "R, V, I",
+          "unit": "Ω, V, A",
+          "notation": "R=Ω, V=Volt, I=Ampere",
+          "simple_explanation": "Every electrical quantity has a unit and a symbol. R (Resistance) is in Ohms (Ω). V (Voltage) is in Volts (V). I (Current) is in Amperes (A).",
+          "example": "If R=10Ω, V=5V, then I = V/R = 5/10 = 0.5A",
+          "key_points": [
+            "R → Ohm (Ω)",
+            "V → Volt (V)",
+            "I → Ampere (A)",
+            "These 3 are connected by Ohm's Law"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Conductors & Insulators",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "-",
+          "simple_explanation": "Conductors allow electricity to flow easily (like copper wire). Insulators block electricity (like rubber or plastic). This is why wires are made of copper but covered in plastic.",
+          "example": "Conductor: Copper, Silver, Gold. Insulator: Rubber, Glass, Plastic, Wood.",
+          "key_points": [
+            "Conductors have free electrons",
+            "Insulators have no free electrons",
+            "Copper is the most common conductor",
+            "Rubber is used to cover wires for safety"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Semiconductors & Examples",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "-",
+          "simple_explanation": "Semiconductors are materials that are between conductors and insulators. They can be controlled to either conduct or block electricity. This makes them perfect for making electronic components.",
+          "example": "Silicon (Si) and Germanium (Ge) are semiconductors. Your phone's chip is made of silicon!",
+          "key_points": [
+            "Silicon (Si) — most common",
+            "Germanium (Ge)",
+            "Used in diodes, transistors, ICs",
+            "Can be made to conduct by adding impurities (doping)"
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Extrinsic & Intrinsic Semiconductors",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "-",
+          "simple_explanation": "Intrinsic = pure semiconductor (like pure silicon). Extrinsic = semiconductor with impurities added (doped) to improve conductivity.",
+          "example": "Pure silicon = Intrinsic. Silicon + Phosphorus = Extrinsic (N-type). Silicon + Boron = Extrinsic (P-type).",
+          "key_points": [
+            "Intrinsic = Pure (poor conductor)",
+            "Extrinsic = Doped (better conductor)",
+            "Doping improves conductivity",
+            "Used to make P-type and N-type materials"
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Doping, Microphone & Loudspeaker",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "-",
+          "simple_explanation": "Doping means adding small amounts of impurities to a semiconductor to change its electrical properties. A Microphone converts sound to electrical signals. A Loudspeaker converts electrical signals back to sound.",
+          "example": "When you speak into a mic, your voice (sound waves) becomes electrical signals. The speaker turns those signals back into sound.",
+          "key_points": [
+            "Doping creates P-type and N-type",
+            "Microphone: Sound → Electricity",
+            "Loudspeaker: Electricity → Sound",
+            "Both use electromagnetic principles"
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Matter, Molecules & Atoms",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "-",
+          "simple_explanation": "Everything around us is made of Matter. Matter is made of tiny Molecules. Molecules are made of even tinier Atoms. Atoms have a nucleus (protons + neutrons) and electrons orbiting around it.",
+          "example": "Water (H₂O) is a molecule made of 2 Hydrogen atoms and 1 Oxygen atom.",
+          "key_points": [
+            "Matter → Molecules → Atoms",
+            "Atom = Nucleus + Electrons",
+            "Nucleus = Protons + Neutrons",
+            "Electrons carry negative charge"
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Atomic Structure & Valence Electrons",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "-",
+          "simple_explanation": "An atom has shells (orbits) around the nucleus. The outermost shell electrons are called Valence Electrons. These valence electrons determine if a material is a conductor, insulator, or semiconductor.",
+          "example": "Copper has 1 valence electron → excellent conductor. Silicon has 4 valence electrons → semiconductor.",
+          "key_points": [
+            "Valence electrons = outermost shell electrons",
+            "1-3 valence electrons = Conductor",
+            "4 valence electrons = Semiconductor",
+            "5-8 valence electrons = Insulator"
+          ]
+        },
+        {
+          "id": 12,
+          "title": "P-type & N-type Materials",
+          "symbol": "P, N",
+          "unit": "-",
+          "notation": "P-type, N-type",
+          "simple_explanation": "N-type: Silicon doped with Phosphorus. Extra electrons (negative carriers). P-type: Silicon doped with Boron. Missing electrons called 'holes' (positive carriers).",
+          "example": "N-type = extra electrons (like extra people in a room). P-type = holes/missing electrons (like empty seats in a room).",
+          "key_points": [
+            "N-type: majority carriers = electrons",
+            "P-type: majority carriers = holes",
+            "N-type dopant: Phosphorus, Arsenic",
+            "P-type dopant: Boron, Gallium"
+          ]
+        },
+        {
+          "id": 13,
+          "title": "PN Junction, Forward & Reverse Bias",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "FB = Forward Bias, RB = Reverse Bias",
+          "simple_explanation": "When P-type and N-type are joined, a PN Junction (Diode) is formed. Forward Bias (FB): current flows. Reverse Bias (RB): current is blocked. This is how a diode works — it only allows current in one direction.",
+          "example": "A diode in a phone charger converts AC to DC by only allowing current to flow one way.",
+          "key_points": [
+            "PN Junction = Diode",
+            "Forward Bias → Current flows",
+            "Reverse Bias → Current blocked",
+            "Depletion region forms at junction"
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Ohm's Law & Kirchhoff's Laws",
+          "symbol": "V=IR, KCL, KVL",
+          "unit": "-",
+          "notation": "V=IR, KCL, KVL",
+          "simple_explanation": "Ohm's Law: V = I × R. Kirchhoff's Current Law (KCL): Total current entering a junction = total current leaving. Kirchhoff's Voltage Law (KVL): Sum of all voltages in a loop = 0.",
+          "example": "KCL: If 3A enters a junction and splits, 1A + 2A must leave. KVL: In a loop with 12V battery and 2 resistors, voltages across resistors must add up to 12V.",
+          "formula": "V = I × R | ΣI(in) = ΣI(out) | ΣV(loop) = 0",
+          "key_points": [
+            "Ohm's Law: V = IR",
+            "KCL: Current in = Current out",
+            "KVL: Sum of voltages in loop = 0",
+            "Foundation of all circuit analysis"
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Resistors in Series & Parallel",
+          "symbol": "R_total",
+          "unit": "Ohm (Ω)",
+          "notation": "R_series, R_parallel",
+          "simple_explanation": "Series: Resistors connected end-to-end. Total resistance ADDS up. Parallel: Resistors connected side-by-side. Total resistance DECREASES.",
+          "example": "Series: R1=2Ω, R2=3Ω → Total = 5Ω. Parallel: R1=4Ω, R2=4Ω → Total = 2Ω",
+          "formula": "Series: R_total = R1 + R2 + R3 | Parallel: 1/R_total = 1/R1 + 1/R2",
+          "key_points": [
+            "Series: R adds up",
+            "Parallel: R decreases",
+            "Same current in series",
+            "Same voltage in parallel"
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Capacitor — Series & Parallel",
+          "symbol": "C",
+          "unit": "Farad (F)",
+          "notation": "C",
+          "simple_explanation": "A capacitor stores electrical energy like a small rechargeable battery. In series, total capacitance decreases. In parallel, total capacitance increases (opposite to resistors!).",
+          "example": "Capacitors in camera flash store energy and release it all at once to create a bright flash.",
+          "formula": "Series: 1/C_total = 1/C1 + 1/C2 | Parallel: C_total = C1 + C2",
+          "key_points": [
+            "Unit: Farad (F)",
+            "Symbol: C",
+            "Stores charge temporarily",
+            "Blocks DC, allows AC"
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Inductor — Series & Parallel",
+          "symbol": "L",
+          "unit": "Henry (H)",
+          "notation": "L",
+          "simple_explanation": "An inductor is a coil of wire that stores energy in a magnetic field. It opposes changes in current. Series inductors add up. Parallel inductors decrease (same as resistors).",
+          "example": "Inductors are used in phone chargers and power supplies to smooth out current.",
+          "formula": "Series: L_total = L1 + L2 | Parallel: 1/L_total = 1/L1 + 1/L2",
+          "key_points": [
+            "Unit: Henry (H)",
+            "Symbol: L",
+            "Stores energy in magnetic field",
+            "Allows DC, blocks AC (opposite of capacitor)"
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Self Induction & Mutual Induction",
+          "symbol": "L, M",
+          "unit": "Henry (H)",
+          "notation": "L = Self, M = Mutual",
+          "simple_explanation": "Self Induction: When current in a coil changes, it induces a voltage in itself. Mutual Induction: When current in one coil changes, it induces voltage in a nearby coil.",
+          "example": "Mutual induction is the principle behind transformers — used in every phone charger and power supply.",
+          "key_points": [
+            "Self Induction: coil induces itself",
+            "Mutual Induction: one coil induces another",
+            "Transformer works on mutual induction",
+            "Unit: Henry (H)"
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Notations, Units & Inducing Capacitor",
+          "symbol": "-",
+          "unit": "-",
+          "notation": "-",
+          "simple_explanation": "Every component has a standard notation and unit. Knowing these helps you read circuit diagrams and solve problems. An inducing capacitor is used in AC circuits for tuning and filtering.",
+          "example": "R=Ω, C=F, L=H, V=Volt, I=Ampere, P=Watt",
+          "key_points": [
+            "Standard notations are universal",
+            "Used in all circuit diagrams",
+            "Helps in reading datasheets",
+            "Important for exams and practical work"
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Transformer",
+          "symbol": "T",
+          "unit": "Turns Ratio (N1:N2)",
+          "notation": "T or TR",
+          "simple_explanation": "A transformer steps voltage up or down using mutual induction. Step-up transformer increases voltage. Step-down transformer decreases voltage. Used in power grids and chargers.",
+          "example": "Your phone charger is a step-down transformer — it converts 220V from the wall to 5V for your phone.",
+          "formula": "V1/V2 = N1/N2  (Voltage ratio = Turns ratio)",
+          "key_points": [
+            "Works on AC only",
+            "Step-up: increases voltage",
+            "Step-down: decreases voltage",
+            "Used in power transmission"
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Transistor, Amplifier & Configurations",
+          "symbol": "T, Q",
+          "unit": "-",
+          "notation": "NPN, PNP | CB, CC, CE",
+          "simple_explanation": "A transistor is a semiconductor device used to amplify or switch signals. It has 3 terminals: Base (B), Collector (C), Emitter (E). Three configurations: CB (Common Base), CC (Common Collector), CE (Common Emitter).",
+          "example": "CE configuration is most common — used in amplifiers (like in your speaker system). Transistors are the building blocks of all computer chips.",
+          "types": [
+            "NPN Transistor",
+            "PNP Transistor"
+          ],
+          "configurations": {
+            "CB": "Common Base — low input impedance, used for high frequency",
+            "CC": "Common Collector (Emitter Follower) — high input impedance, used as buffer",
+            "CE": "Common Emitter — most used, provides voltage and current gain"
+          },
+          "key_points": [
+            "3 terminals: Base, Collector, Emitter",
+            "CE config = most popular",
+            "Used as amplifier and switch",
+            "Foundation of all digital electronics"
+          ]
+        },
+        {
+          "id": 22,
+          "title": "SCR, UJT, JFET, TRIAC, DIAC",
+          "symbol": "SCR, UJT, JFET",
+          "unit": "-",
+          "notation": "SCR, UJT, JFET, TRIAC, DIAC",
+          "simple_explanation": "These are advanced semiconductor devices. SCR (Silicon Controlled Rectifier): controls large power. TRIAC: controls AC power. DIAC: triggers TRIAC. JFET: voltage-controlled transistor. UJT: used in oscillators.",
+          "example": "SCR is used in light dimmers and motor speed controllers. TRIAC controls AC appliances like fans.",
+          "key_points": [
+            "SCR = Silicon Controlled Rectifier",
+            "TRIAC = controls AC current",
+            "DIAC = triggers TRIAC",
+            "JFET = Junction Field Effect Transistor",
+            "UJT = Unijunction Transistor"
+          ]
+        },
+        {
+          "id": 23,
+          "title": "CRO (Cathode Ray Oscilloscope)",
+          "symbol": "CRO",
+          "unit": "-",
+          "notation": "CRO",
+          "simple_explanation": "A CRO is a measuring instrument that displays electrical signals as waveforms on a screen. It shows voltage vs time. Used to see the shape of AC signals, measure frequency, and check waveforms.",
+          "example": "If you connect a CRO to a speaker wire, you can see the sound wave on the screen!",
+          "key_points": [
+            "Displays voltage waveforms",
+            "Measures frequency and amplitude",
+            "Shows AC and DC signals",
+            "Essential lab instrument"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computer_hardware",
+      "name": "Computer Hardware & Software",
+      "color": "#10B981",
+      "icon": "💻",
+      "topics": [
+        {
+          "id": 101,
+          "title": "Computer",
+          "simple_explanation": "A computer is an electronic machine that takes input, processes it, stores data, and gives output. It follows instructions given by programs.",
+          "example": "Your laptop, desktop, phone — all are computers.",
+          "key_points": [
+            "Input → Process → Output",
+            "Works on binary (0s and 1s)",
+            "Has hardware and software",
+            "Follows stored program instructions"
+          ]
+        },
+        {
+          "id": 102,
+          "title": "Microprocessor (CPU)",
+          "full_form": "Central Processing Unit",
+          "simple_explanation": "The microprocessor is the brain of the computer. It performs all calculations and logical operations. Also called CPU. It has ALU (Arithmetic Logic Unit) and CU (Control Unit).",
+          "example": "Intel Core i7, AMD Ryzen 5 are popular microprocessors.",
+          "key_points": [
+            "Brain of the computer",
+            "Contains ALU and CU",
+            "Speed measured in GHz",
+            "Processes billions of instructions per second"
+          ]
+        },
+        {
+          "id": 103,
+          "title": "ALU & CU",
+          "full_form": "ALU = Arithmetic Logic Unit | CU = Control Unit",
+          "simple_explanation": "ALU does all math (addition, subtraction) and logic (AND, OR, NOT) operations. CU controls and coordinates all parts of the computer — it tells each part what to do and when.",
+          "example": "When you add 5+3, the ALU does the calculation. The CU makes sure the result goes to the right place.",
+          "key_points": [
+            "ALU: does math and logic",
+            "CU: controls all operations",
+            "Both are inside the CPU",
+            "Work together every nanosecond"
+          ]
+        },
+        {
+          "id": 104,
+          "title": "BUS",
+          "simple_explanation": "A BUS is a communication pathway that transfers data between components inside a computer. Like a highway for data.",
+          "types": [
+            "Data Bus: carries actual data",
+            "Address Bus: carries memory addresses",
+            "Control Bus: carries control signals"
+          ],
+          "example": "When CPU reads from RAM, data travels through the data bus.",
+          "key_points": [
+            "Data Bus, Address Bus, Control Bus",
+            "Width measured in bits (32-bit, 64-bit)",
+            "Faster bus = faster computer",
+            "Connects CPU, RAM, and other components"
+          ]
+        },
+        {
+          "id": 105,
+          "title": "North Bridge & South Bridge",
+          "simple_explanation": "North Bridge connects the CPU to high-speed components like RAM and graphics card. South Bridge connects to slower components like USB, audio, storage drives.",
+          "example": "Think of North Bridge as a highway and South Bridge as local roads.",
+          "key_points": [
+            "North Bridge: CPU ↔ RAM, GPU",
+            "South Bridge: CPU ↔ USB, Audio, Storage",
+            "Together called the chipset",
+            "Modern CPUs have integrated North Bridge"
+          ]
+        },
+        {
+          "id": 106,
+          "title": "ROM & RAM",
+          "full_form": "ROM = Read Only Memory | RAM = Random Access Memory",
+          "simple_explanation": "ROM stores permanent data that doesn't change (like BIOS). RAM is temporary memory used while the computer is running — it's erased when you turn off the computer.",
+          "example": "ROM: stores startup instructions. RAM: stores your open Chrome tabs and documents.",
+          "types_ram": [
+            "DDR3",
+            "DDR4",
+            "DDR5",
+            "SDRAM",
+            "DDRRAM"
+          ],
+          "key_points": [
+            "ROM: permanent, non-volatile",
+            "RAM: temporary, volatile",
+            "More RAM = faster multitasking",
+            "RAM is measured in GB"
+          ]
+        },
+        {
+          "id": 107,
+          "title": "EPROM & PROM",
+          "full_form": "EPROM = Erasable Programmable ROM | PROM = Programmable ROM",
+          "simple_explanation": "PROM can be programmed once. EPROM can be erased with UV light and reprogrammed. EEPROM can be erased electrically (used in modern devices).",
+          "example": "Old game cartridges used PROM. Modern flash drives use EEPROM technology.",
+          "key_points": [
+            "PROM: write once only",
+            "EPROM: erase with UV light",
+            "EEPROM: erase electrically",
+            "Flash memory is based on EEPROM"
+          ]
+        },
+        {
+          "id": 108,
+          "title": "PATA & SATA",
+          "full_form": "PATA = Parallel ATA | SATA = Serial ATA",
+          "simple_explanation": "PATA and SATA are interfaces that connect storage devices (hard drives) to the motherboard. SATA is newer, faster, and uses thinner cables than PATA.",
+          "example": "Old computers used PATA (wide ribbon cables). Modern computers use SATA (thin cables).",
+          "key_points": [
+            "PATA: older, slower, wide cable",
+            "SATA: newer, faster, thin cable",
+            "SATA speeds: 1.5, 3, 6 Gbps",
+            "Most modern PCs use SATA"
+          ]
+        },
+        {
+          "id": 109,
+          "title": "BIOS & POST",
+          "full_form": "BIOS = Basic Input Output System | POST = Power On Self Test",
+          "simple_explanation": "BIOS is the first program that runs when you turn on a computer. It checks all hardware components. POST is the self-test it performs to make sure everything is working before loading the OS.",
+          "example": "When you turn on your PC and see a logo screen — that's BIOS running POST.",
+          "key_points": [
+            "BIOS: stored in ROM chip",
+            "POST: checks CPU, RAM, keyboard",
+            "If POST fails → beep codes",
+            "Modern BIOS is called UEFI"
+          ]
+        },
+        {
+          "id": 110,
+          "title": "CMOS RAM & Lithium Battery",
+          "full_form": "CMOS = Complementary Metal Oxide Semiconductor",
+          "simple_explanation": "CMOS RAM stores BIOS settings (date, time, boot order). It needs constant power to retain data. The small lithium battery on the motherboard powers CMOS RAM when the PC is off.",
+          "example": "If you remove the CMOS battery, your PC will forget the date and time.",
+          "key_points": [
+            "CMOS stores BIOS settings",
+            "Powered by CR2032 lithium battery",
+            "Retains date/time when PC is off",
+            "Battery lasts 5-10 years"
+          ]
+        },
+        {
+          "id": 111,
+          "title": "SMPS",
+          "full_form": "Switched Mode Power Supply",
+          "simple_explanation": "SMPS converts AC power from the wall into DC power that the computer components need. It provides different voltages: +12V, +5V, +3.3V to different parts.",
+          "example": "The big box inside your desktop PC with a fan is the SMPS/PSU.",
+          "key_points": [
+            "Converts AC to DC",
+            "Provides +12V, +5V, +3.3V",
+            "Has a cooling fan",
+            "Wattage = how much power it can supply"
+          ]
+        },
+        {
+          "id": 112,
+          "title": "IDE, PCI & AGP",
+          "full_form": "IDE = Integrated Drive Electronics | PCI = Peripheral Component Interconnect | AGP = Accelerated Graphics Port",
+          "simple_explanation": "IDE: old interface for hard drives. PCI: expansion slot for adding cards (sound card, network card). AGP: old dedicated slot for graphics cards (replaced by PCIe).",
+          "example": "You plug a graphics card into a PCI-Express slot. Old graphics cards used AGP slots.",
+          "key_points": [
+            "IDE: old storage interface",
+            "PCI: general expansion slots",
+            "AGP: old graphics slot",
+            "Modern standard: PCIe (PCI Express)"
+          ]
+        },
+        {
+          "id": 113,
+          "title": "Cache Memory",
+          "simple_explanation": "Cache is super-fast memory built inside the CPU. It stores frequently used data so the CPU doesn't have to wait for RAM. L1 is fastest (smallest), L3 is slowest (largest).",
+          "example": "When you open the same app twice, it loads faster the second time because data is cached.",
+          "key_points": [
+            "L1 Cache: fastest, smallest (KB)",
+            "L2 Cache: medium",
+            "L3 Cache: slowest, largest (MB)",
+            "Much faster than RAM"
+          ]
+        },
+        {
+          "id": 114,
+          "title": "Primary & Secondary Memory",
+          "simple_explanation": "Primary Memory: directly accessed by CPU — includes RAM and ROM. Fast but limited. Secondary Memory: storage devices like HDD, SSD — slower but stores large amounts permanently.",
+          "example": "Primary: RAM (8GB). Secondary: Hard Drive (1TB).",
+          "key_points": [
+            "Primary: RAM, ROM, Cache",
+            "Secondary: HDD, SSD, CD, DVD",
+            "Primary is faster but smaller",
+            "Secondary is permanent storage"
+          ]
+        },
+        {
+          "id": 115,
+          "title": "ATX & AT",
+          "full_form": "ATX = Advanced Technology Extended | AT = Advanced Technology",
+          "simple_explanation": "AT and ATX are motherboard form factors (sizes and layouts). ATX is the modern standard. It defines the size of the motherboard and where components are placed.",
+          "example": "Most desktop motherboards today are ATX or Micro-ATX.",
+          "key_points": [
+            "AT: older standard",
+            "ATX: modern standard",
+            "Defines motherboard size",
+            "ATX: 305mm × 244mm"
+          ]
+        },
+        {
+          "id": 116,
+          "title": "Tracks, Sectors, Clusters & Format",
+          "simple_explanation": "Hard drives are organized in circles called Tracks. Each track is divided into Sectors (512 bytes each). A Cluster is a group of sectors. Formatting prepares the drive to store files.",
+          "example": "Think of a hard drive like a vinyl record: tracks are the circles, sectors are small pieces of each circle.",
+          "key_points": [
+            "Track: circular path on disk",
+            "Sector: smallest storage unit (512B)",
+            "Cluster: group of sectors",
+            "Format: prepares disk for use"
+          ]
+        },
+        {
+          "id": 117,
+          "title": "Partition",
+          "simple_explanation": "Partitioning divides one physical hard drive into separate sections that act like separate drives. Useful for organizing data or installing multiple operating systems.",
+          "example": "C: drive for Windows, D: drive for files — both on the same physical hard drive.",
+          "key_points": [
+            "Divides one drive into sections",
+            "Each partition acts as separate drive",
+            "MBR: old partition style (max 4 partitions)",
+            "GPT: modern partition style (unlimited)"
+          ]
+        },
+        {
+          "id": 118,
+          "title": "Hardware & Software",
+          "simple_explanation": "Hardware: physical parts you can touch (monitor, keyboard, CPU). Software: programs and instructions you cannot touch (Windows, Chrome, games).",
+          "example": "Your laptop screen = Hardware. The Windows OS on it = Software.",
+          "key_points": [
+            "Hardware: physical components",
+            "Software: programs and data",
+            "Hardware runs software",
+            "Without software, hardware is useless"
+          ]
+        },
+        {
+          "id": 119,
+          "title": "Operating System",
+          "simple_explanation": "The OS is the main software that manages all hardware and software on a computer. It provides an interface for users and manages memory, files, and processes.",
+          "example": "Windows 11, macOS, Linux, Android, iOS are all operating systems.",
+          "key_points": [
+            "Manages hardware resources",
+            "Provides user interface",
+            "Examples: Windows, Linux, macOS",
+            "Without OS, computer cannot function"
+          ]
+        },
+        {
+          "id": 120,
+          "title": "Application Software",
+          "simple_explanation": "Application software (apps) are programs designed for specific tasks for the user. They run on top of the operating system.",
+          "example": "Microsoft Word (writing), Chrome (browsing), Photoshop (editing), WhatsApp (messaging).",
+          "key_points": [
+            "Designed for specific user tasks",
+            "Runs on top of OS",
+            "Examples: Word, Excel, Chrome",
+            "Can be installed and uninstalled"
+          ]
+        },
+        {
+          "id": 121,
+          "title": "SSD & USB",
+          "full_form": "SSD = Solid State Drive | USB = Universal Serial Bus",
+          "simple_explanation": "SSD: fast storage with no moving parts (uses flash memory). Much faster than HDD. USB: standard connector for connecting devices like flash drives, keyboards, mice to a computer.",
+          "example": "SSD makes your laptop boot in 10 seconds instead of 1 minute. USB lets you plug in a pen drive.",
+          "key_points": [
+            "SSD: faster, no moving parts, expensive",
+            "HDD: slower, moving parts, cheaper",
+            "USB 2.0: 480 Mbps",
+            "USB 3.0: 5 Gbps",
+            "USB 3.1: 10 Gbps"
+          ]
+        },
+        {
+          "id": 122,
+          "title": "System Bus",
+          "simple_explanation": "The System Bus connects the CPU, memory, and input/output devices. It carries data, addresses, and control signals between all components.",
+          "example": "When you press a key, the signal travels through the system bus to the CPU.",
+          "key_points": [
+            "Connects CPU, RAM, I/O",
+            "3 types: Data, Address, Control",
+            "Speed measured in MHz/GHz",
+            "Wider bus = more data at once"
+          ]
+        },
+        {
+          "id": 123,
+          "title": "Motherboard",
+          "simple_explanation": "The motherboard is the main circuit board of a computer. All components connect to it: CPU, RAM, storage, graphics card, and more. It's the backbone of the computer.",
+          "example": "Think of the motherboard as the skeleton of a computer — everything attaches to it.",
+          "key_points": [
+            "Main circuit board",
+            "Connects all components",
+            "Contains chipset, BIOS, slots",
+            "Form factors: ATX, Micro-ATX, Mini-ITX"
+          ]
+        },
+        {
+          "id": 124,
+          "title": "System Tools & Defragmentation",
+          "simple_explanation": "System Tools are built-in utilities to maintain your computer. Defragmentation reorganizes fragmented files on a hard drive so they can be read faster.",
+          "example": "Over time, files get scattered on HDD. Defrag puts them back together like organizing a messy drawer.",
+          "key_points": [
+            "Defrag: only for HDD, not SSD",
+            "Improves HDD read/write speed",
+            "Other tools: Disk Cleanup, Task Manager",
+            "Should be done regularly"
+          ]
+        },
+        {
+          "id": 125,
+          "title": "Virus & Antivirus",
+          "simple_explanation": "A computer virus is malicious software that damages files, steals data, or slows your computer. Antivirus software detects and removes viruses to protect your computer.",
+          "example": "Opening a suspicious email attachment can install a virus. Antivirus like Windows Defender scans and removes it.",
+          "key_points": [
+            "Virus: harmful program",
+            "Spreads through files, email, USB",
+            "Antivirus: detects and removes",
+            "Keep antivirus updated always"
+          ]
+        },
+        {
+          "id": 126,
+          "title": "Utility Software & Firmware",
+          "simple_explanation": "Utility Software: programs that help maintain and manage the computer (antivirus, disk cleaner, backup tools). Firmware: permanent software stored in hardware chips (like BIOS) that controls the device.",
+          "example": "Utility: CCleaner, WinRAR. Firmware: BIOS on motherboard, software inside your printer.",
+          "key_points": [
+            "Utility: maintenance programs",
+            "Firmware: software in hardware",
+            "Firmware cannot be easily changed",
+            "Examples: BIOS, router firmware"
+          ]
+        },
+        {
+          "id": 127,
+          "title": "Data & Instruction",
+          "simple_explanation": "Data is raw facts and figures (numbers, text, images). Instructions tell the computer what to do with the data. Together they make a program.",
+          "example": "Data: the number 5 and 3. Instruction: ADD them. Result: 8.",
+          "key_points": [
+            "Data: raw input (numbers, text)",
+            "Instructions: commands for CPU",
+            "Program = Data + Instructions",
+            "Stored in binary (0s and 1s)"
+          ]
+        },
+        {
+          "id": 128,
+          "title": "High Level, Low Level & Machine Language",
+          "simple_explanation": "Machine Language: binary (0s and 1s) — only computers understand. Low Level: Assembly language — closer to machine code. High Level: Python, Java, C++ — easy for humans to write and read.",
+          "example": "High Level: print('Hello') in Python. Machine Language: 01001000 01100101 01101100...",
+          "key_points": [
+            "Machine Language: binary, fastest",
+            "Low Level: Assembly, uses mnemonics",
+            "High Level: Python, Java, C++",
+            "Compiler/Interpreter converts high to machine"
+          ]
+        },
+        {
+          "id": 129,
+          "title": "Input & Output Devices",
+          "simple_explanation": "Input Devices: send data INTO the computer (keyboard, mouse, scanner, microphone). Output Devices: receive data FROM the computer (monitor, printer, speaker).",
+          "example": "You type on keyboard (input) → computer processes → shows on monitor (output).",
+          "input_examples": [
+            "Keyboard",
+            "Mouse",
+            "Scanner",
+            "Microphone",
+            "Webcam"
+          ],
+          "output_examples": [
+            "Monitor",
+            "Printer",
+            "Speaker",
+            "Projector"
+          ],
+          "key_points": [
+            "Input: data goes IN",
+            "Output: data comes OUT",
+            "Some devices do both (touchscreen)",
+            "I/O devices connect via ports"
+          ]
+        },
+        {
+          "id": 130,
+          "title": "Memory & Storage Devices",
+          "simple_explanation": "Memory (RAM): temporary, fast, used while running. Storage (HDD/SSD): permanent, stores everything even when off. Secondary storage includes HDD, SSD, CD, DVD, Pen Drive.",
+          "example": "RAM holds your open apps. HDD/SSD stores your photos, videos, and installed programs.",
+          "key_points": [
+            "RAM: temporary, fast",
+            "HDD: permanent, slow, cheap",
+            "SSD: permanent, fast, expensive",
+            "CD/DVD: optical storage"
+          ]
+        },
+        {
+          "id": 131,
+          "title": "Booting",
+          "simple_explanation": "Booting is the process of starting a computer. Cold Boot: starting from completely off. Warm Boot: restarting without turning off power.",
+          "example": "Pressing the power button = Cold Boot. Clicking Restart in Windows = Warm Boot.",
+          "key_points": [
+            "Cold Boot: power off → on",
+            "Warm Boot: restart",
+            "BIOS runs POST during boot",
+            "OS loads into RAM during boot"
+          ]
+        },
+        {
+          "id": 132,
+          "title": "Expansion Cards",
+          "simple_explanation": "Expansion cards are circuit boards you plug into the motherboard to add new features. Examples: Graphics Card (GPU), Sound Card, Network Card (NIC), WiFi Card.",
+          "example": "Adding a graphics card to your PC lets you play high-quality games.",
+          "key_points": [
+            "Plug into PCI/PCIe slots",
+            "Add new functionality",
+            "GPU: for graphics",
+            "NIC: for network connection"
+          ]
+        },
+        {
+          "id": 133,
+          "title": "CPU, Cooling System & Ports",
+          "simple_explanation": "CPU generates heat while working. Cooling System (fan + heatsink) keeps it cool. Ports are connectors on the outside of the computer for connecting devices (USB, HDMI, Audio).",
+          "example": "Without cooling, CPU would overheat and shut down. Ports let you connect your monitor, keyboard, and headphones.",
+          "key_points": [
+            "CPU needs cooling to work",
+            "Air cooling: fan + heatsink",
+            "Liquid cooling: for high performance",
+            "Common ports: USB, HDMI, VGA, Audio, Ethernet"
+          ]
+        },
+        {
+          "id": 134,
+          "title": "Power Good Signal",
+          "simple_explanation": "Power Good Signal is sent by the SMPS to the motherboard when power supply is stable and ready. Only after receiving this signal does the CPU start working.",
+          "example": "It's like a green light — SMPS tells the motherboard 'power is stable, you can start now!'",
+          "key_points": [
+            "Sent by SMPS to motherboard",
+            "Ensures stable power before boot",
+            "Without it, CPU won't start",
+            "Part of the boot sequence"
+          ]
+        },
+        {
+          "id": 135,
+          "title": "Data Units: Bit, Byte, KB, MB, GB, TB",
+          "simple_explanation": "Bit is the smallest unit of data (0 or 1). 8 bits = 1 Byte. 1024 Bytes = 1 KB. 1024 KB = 1 MB. 1024 MB = 1 GB. 1024 GB = 1 TB.",
+          "example": "A text message is a few KB. A photo is a few MB. A movie is a few GB. A hard drive is TB.",
+          "formula": "8 bits = 1 Byte | 1024 B = 1 KB | 1024 KB = 1 MB | 1024 MB = 1 GB | 1024 GB = 1 TB",
+          "key_points": [
+            "Bit: 0 or 1",
+            "Nibble: 4 bits",
+            "Byte: 8 bits",
+            "KB, MB, GB, TB are multiples of 1024"
+          ]
+        },
+        {
+          "id": 136,
+          "title": "Resistor Color Code: BBROYGBVGW",
+          "simple_explanation": "Resistors use colored bands to show their value. The color code is: Black, Brown, Red, Orange, Yellow, Green, Blue, Violet, Grey, White = 0,1,2,3,4,5,6,7,8,9.",
+          "memory_trick": "BB ROY of Great Britain has a Very Good Wife",
+          "colors": {
+            "Black": 0,
+            "Brown": 1,
+            "Red": 2,
+            "Orange": 3,
+            "Yellow": 4,
+            "Green": 5,
+            "Blue": 6,
+            "Violet": 7,
+            "Grey": 8,
+            "White": 9
+          },
+          "key_points": [
+            "4-band resistors are most common",
+            "First 2 bands = digits",
+            "3rd band = multiplier",
+            "4th band = tolerance (Gold=5%, Silver=10%)"
+          ]
+        },
+        {
+          "id": 137,
+          "title": "NIC, AGP, SATA, RJ45, Molex, VGA, USB PS/2",
+          "full_forms": {
+            "NIC": "Network Interface Card",
+            "AGP": "Accelerated Graphics Port",
+            "SATA": "Serial Advanced Technology Attachment",
+            "RJ45": "Registered Jack 45 (Ethernet connector)",
+            "Molex": "Power connector for drives",
+            "VGA": "Video Graphics Array",
+            "PS/2": "Personal System/2 (keyboard/mouse connector)"
+          },
+          "simple_explanation": "These are connectors and interfaces used in computers. NIC connects to network. RJ45 is the ethernet cable connector. VGA connects monitor. PS/2 is old keyboard/mouse port.",
+          "key_points": [
+            "RJ45: ethernet/internet cable",
+            "VGA: old monitor connector",
+            "PS/2: old keyboard/mouse port",
+            "Molex: 4-pin power connector for drives"
+          ]
+        }
+      ]
+    }
+  ]
+}

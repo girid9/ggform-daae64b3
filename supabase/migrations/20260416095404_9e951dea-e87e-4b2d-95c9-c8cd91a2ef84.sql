@@ -1,0 +1,1 @@
+ALTER TABLE public.quiz_sessions ADD COLUMN name text NOT NULL DEFAULT '';
