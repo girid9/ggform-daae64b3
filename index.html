@@ -13,6 +13,14 @@
           regs.forEach(r => r.unregister());
         });
       }
+      // Force reload if cached version mismatch
+      const CV = '2';
+      if (localStorage.getItem('app-version') !== CV) {
+        localStorage.setItem('app-version', CV);
+        if (performance.navigation.type !== 1) {
+          window.location.reload(true);
+        }
+      }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,6 +55,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx?v=2"></script>
   </body>
 </html>
