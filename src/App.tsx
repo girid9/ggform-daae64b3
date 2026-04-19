@@ -22,11 +22,7 @@ const Study = lazy(() => import("./pages/Study"));
 
 const queryClient = new QueryClient();
 
-const RouteFallback = () => (
-  <div className="page-bg flex min-h-screen items-center justify-center">
-    <Loader2 className="h-7 w-7 animate-spin text-primary" />
-  </div>
-);
+const RouteFallback = () => <RouteSkeleton />;
 
 const App = () => {
   return (
