@@ -18,6 +18,7 @@ const Analytics = lazy(() => import("./pages/Analytics"));
 const QuestionBank = lazy(() => import("./pages/QuestionBank"));
 const ImportQuestions = lazy(() => import("./pages/ImportQuestions"));
 const DailyView = lazy(() => import("./pages/DailyView"));
+const DailyLeaderboard = lazy(() => import("./pages/DailyLeaderboard"));
 const Study = lazy(() => import("./pages/Study"));
 
 const queryClient = new QueryClient();
