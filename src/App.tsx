@@ -19,6 +19,7 @@ const QuestionBank = lazy(() => import("./pages/QuestionBank"));
 const ImportQuestions = lazy(() => import("./pages/ImportQuestions"));
 const DailyView = lazy(() => import("./pages/DailyView"));
 const DailyLeaderboard = lazy(() => import("./pages/DailyLeaderboard"));
+const SessionLeaderboard = lazy(() => import("./pages/SessionLeaderboard"));
 const Study = lazy(() => import("./pages/Study"));
 
 const queryClient = new QueryClient();
@@ -43,6 +44,7 @@ const App = () => {
             <Route path="/study" element={<Study />} />
             <Route path="/daily/:code" element={<DailyView />} />
             <Route path="/leaderboard/:code" element={<DailyLeaderboard />} />
+            <Route path="/leaderboard/session/:code" element={<SessionLeaderboard />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
