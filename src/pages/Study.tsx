@@ -245,7 +245,6 @@ const Study = () => {
   if (loading) {
     return <StudySkeleton />;
   }
-  }
 
   return (
     <div className="min-h-screen pb-12 page-bg">
