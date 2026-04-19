@@ -531,3 +531,81 @@
     background-attachment: scroll;
   }
 }
+
+/* ===== Snappy global micro-interactions ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button,
+  a,
+  [role="button"],
+  input,
+  select,
+  textarea {
+    transition:
+      transform 140ms cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 140ms cubic-bezier(0.22, 1, 0.36, 1),
+      color 140ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 180ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 140ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 140ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  button:active,
+  [role="button"]:active,
+  a:active {
+    transform: scale(0.97);
+  }
+}
+
+@layer utilities {
+  .page-enter {
+    animation: fade-up 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .card-lift {
+    transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 200ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+  .card-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px -12px hsl(var(--foreground) / 0.18);
+  }
+  .press {
+    transition: transform 120ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .press:active {
+    transform: scale(0.98);
+  }
+  .stagger > * {
+    opacity: 0;
+    animation: fade-up 0.32s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .stagger > *:nth-child(1) { animation-delay: 40ms; }
+  .stagger > *:nth-child(2) { animation-delay: 90ms; }
+  .stagger > *:nth-child(3) { animation-delay: 140ms; }
+  .stagger > *:nth-child(4) { animation-delay: 190ms; }
+  .stagger > *:nth-child(5) { animation-delay: 240ms; }
+  .stagger > *:nth-child(6) { animation-delay: 290ms; }
+  .stagger > *:nth-child(7) { animation-delay: 340ms; }
+  .stagger > *:nth-child(8) { animation-delay: 390ms; }
+  .shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .shine::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, hsl(var(--foreground) / 0.08) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+  }
+  .shine:hover::after {
+    transform: translateX(100%);
+  }
+}
